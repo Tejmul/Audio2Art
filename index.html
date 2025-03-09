@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio2Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Audio2Art</h1>
+        </header>
+        
+        <div class="main">
+            <div class="waveform-container">
+                <div class="waveform"></div>
+            </div>
+            <p class="instruction">Record or Upload Audio to Generate Art</p>
+            <div class="controls">
+                <button id="recordButton" class="btn">🎤 Record</button>
+                <input type="file" id="audioFile" accept="audio/*" class="file-input">
+                <button id="generateButton" class="btn">🎨 Generate Art</button>
+            </div>
+            <div class="output">
+                <img id="generatedImage" src="" alt="Generated Art" class="generated-art">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
